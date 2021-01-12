@@ -6,12 +6,20 @@ public class methodTable {
         }
         return result;
     }
+    public static void print(int[] result) {
+    	for(int i =0; i<result.length; i++) {
+    		System.out.println(result[i]);
+    	}
+    }
 
     public static void main(String[] args) {
     	int[] result = calculate(2);
+    	print(result);
     	
-        for (int i = 0; i < result.length; i++) {
-        	System.out.println(result[i]);
+    	int[] times3 = calculate(3);
+    	print(times3);
+    	
+    	
+
         }
     }
-}
